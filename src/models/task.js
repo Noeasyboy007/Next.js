@@ -15,14 +15,14 @@ const taskSchema = new mongoose.Schema({
         required: true,
     },
     status: {
-        type: Number,
+        type: String,
         enum: ["pending", "completed", "progress"],
         default: "pending",
         required: true,
     },
     userId: {
         type: mongoose.ObjectId,
-        required: [true, "Email Required"],
+        required: [true, "User Id Required"],
         required: true,
     },
    
